@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html ng-app>
+	<head lang ="pt-br">
+		<meta charset ="UTF-8">
+		<TITLE>Cadastro de Endereços</TITLE>
+
+		<script 
+			src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js">
+		</script>
+
+		<style type="text/css">
+		#formPrincipal{
+			font-family: arial,helvetica,sans-serif;
+			font-size: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+
+		}		
+   		</style>
+
+	</head>
+
+	<body>
+
+		<H1>Digite seu dados abaixo</H1>
+		<hr>
+
+		<form id="formPrincipal">
+		<div>
+			<label>Nome Completo:</label>
+			<input type="text" ng-model="seuNome" placeholder="Digite seu nome completo"></input>
+			<label>Cpf:</label>
+			<input type="text" ng-model = "seuCpf" placeholder = "Digite seu cpf"></input>
+			<br><br>
+
+			<label>Endereço</label>
+			<input type="text" ng-model="seuEndereco" placeholder="Digite seu endereço"></input>
+			<br><br>
+			<label>CEP:</label>
+			<input type="text" ng-model="seuCep" placeholder="Digite seu Cep"></input>
+			<br><br>
+
+			<label>Cidade:</label>
+			<input type="text" ng-model="suaCidade" placeholder="Digite a sua cidade">
+			<br><br>
+			<label>Estado</label>
+			<input type="text" ng-model = "seuEstado" placeholder ="Digite seu estado">
+
+			<hr>
+
+			
+
+		</div>
+
+		</form>
+	</body>
+</html>
